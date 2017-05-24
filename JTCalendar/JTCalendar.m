@@ -18,6 +18,17 @@
 
 @implementation JTCalendar
 
+static NSString *displayLanguageCode = @"en";
+
+
++ (NSString *) getLanguageCode {
+    return displayLanguageCode;
+}
++ (void) setLanguageCode:(NSString*)code {
+    displayLanguageCode = code;
+}
+
+
 - (instancetype)init
 {
     self = [super init];
