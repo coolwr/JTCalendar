@@ -28,6 +28,9 @@
 @property (strong, nonatomic, readonly) JTCalendarDataCache *dataCache;
 @property (strong, nonatomic, readonly) JTCalendarAppearance *calendarAppearance;
 
++ (NSString *) getLanguageCode;
++ (void) setLanguageCode:(NSString*)code;
+
 - (void)reloadData;
 - (void)reloadAppearance;
 
